@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #ac:hover{color:red;}
+        #ac:active{color:blue;}
+        input[type="text"] { background-color: red;}
+        input[type="password"] {background-color: blue;}
+        #a h1{color:yellow;}
+        #c > h1{color:blueviolet;}
+    </style>
+</head>
+<header>
+    <h1 class="header">CSS기초</h1>    <!--큰 제목 글자-->
+    
+</header>
+<nav>
+    <ul> <!--순서가 없는 목록 생성-->
+        <li> <!--목록 요소 생성-->
+            <h2><a href="structure.html" class="color">기본구조</a></h2> <!--a태그는 하이퍼링크-->
+        </li>
+        <li>
+            <h2><a href="tag.html" class="color">기본태그</a></h2>
+        </li>
+        <li>
+            <h2><a href="structuredtag.html" class="color">구조화태그</a></h2>
+        </li>
+        <li>
+            <h2><a href="cssAttribute.html" class="color">css속성</a></h2>
+        </li>
+        <li>
+            <h2><a href="index.html" class="color">홈</a></h2>
+        </li>
+    </ul>
+</nav>
+<body>
+    <hr>
+    <h2>CSS 선택자 종류</h2>
+    <h3>1. 전체 선택자 (*) &nbsp; 2. 태그 선택자 (태그) &nbsp; 3. 아이디 선택자 (#아이디) <br>
+        4. 클래스 선택자 (.클래스) &nbsp; 5. 후손 선택자 (header h1) &nbsp; 6. 자손 선택자 (header > h1)
+    </h3>
+    <h2>기본 선택자</h2>
+    <h3>
+        1.전체 선택자 : HTML 페이지 내부의 태그 모두 선택 <br> 
+        2.태그 선택자 : HTML 페이지 내부의 특정 태그 모두 선택 <br> <xmp>h1 { color:red; }</xmp>
+        3.아이디 선택자 : 특정 id가 있는 태그 선택 (중복X) <br> <xmp>#header {color:blue}</xmp>
+        4.클래스 선택자 : 특정 클래스가 있는 태그 선택 <xmp>.header {color:green}</xmp>
+    </h3>
+    <h2>속성 선택자</h2>
+    Ex)input[type = "값"] { CSS }
+    <form>
+        <input type="text">
+        <input type="password">
+    </form>
+    <h2>후손 자손 선택자</h2>
+    <xmp> 
+        <div> 부모
+            <h1></h1> 자손
+            <ul>
+                <li>div안에 있는거 전부 후손 바로 아래는 자손 h1,ul은 자손 li는 후손</li>
+            </ul>
+        </div>
+    </xmp>
+    <div id ="a">
+        <h1 class="title">후손 선택</h1>
+        <div id ="b">
+            <h1>후손이옵니다</h1>
+        </div>
+    </div>
+    <div id ="c">
+        <h1 class="title">자손 선택</h1>
+        <div id="d">
+            <h1>자손X 후손입니다</h1>
+        </div>
+    </div>
+    <h2 id ="ac">반응선택자</h2>
+</body>
+</html>

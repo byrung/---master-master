@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1 class="header">기본 태그</h1>
+</header>
+<nav>
+    <ul>
+        <li>
+            <h2><a href="structure.html" class="color">기본구조</a></h2>
+        </li>
+        <li>
+            <h2><a href="structuredtag.html" class="color">구조화태그</a></h2>
+        </li>
+        <li>
+            <h2><a href="cssbasics.html" class="color">CSS기초</a></h2>
+        </li>
+        <li>
+            <h2><a href="cssAttribute.html" class="color">css속성</a></h2>
+        </li>
+        <li>
+            <h2><a href="index.html" class="color">홈</a></h2>
+        </li>
+    </ul>
+</nav>
+<body>
+    <hr>
+    <div id = "word">
+        <h1>1.글자태그</h1>
+        <h1>
+            <xmp><h1>태그 첫 번째로 큰 제목 글자</xmp>
+        </h1>
+        <h2>
+            <xmp><h2>태그 두 번째로 큰 제목 글자</xmp>
+        </h2>
+        <h3>
+            <xmp><h3>태그 세 번째로 큰 제목 글자</xmp>
+        </h3>
+        <h4>
+            <xmp><h4>태그 네 번째로 큰 제목 글자</xmp>
+        </h4>
+        <h5>
+            <xmp><h5>태그 다섯 번째로 큰 제목 글자</xmp>
+        </h5>
+        <h6>
+            <xmp><h6>태그 여섯 번째로 큰 제목 글자</xmp>
+        </h6>
+        <h3>
+            <xmp>특수 문자 표기 &nbsp;(공백) &lt;(<) &gt;(>) &amp;(&)</xmp>
+        </h3>
+        <h3>
+            <xmp>앵커 태그 <a href="이동할 웹 페이지주소">(출력글자)</a></xmp>
+        </h3>
+        <h3>
+            <b>굵은 글자</b> b태그 &nbsp;
+            <i>기울어진 글자</i> i태그 &nbsp;
+            <small>작은 글자</small> small태그 <br>
+            <sub>아래 첨자</sub> sub태그 &nbsp;
+            <sup>위 첨자</sup> sup태그 &nbsp;
+            <ins>밑줄 글자</ins> ins태그 &nbsp;
+            <del>취소선이 그어진 글자</del> del태그
+        </h3>
+    </div>
+    <div id = "list">
+        <h1>2.목록태그</h1>
+        <h3> ul &lt; 순서가 없는 목록 ol &lt; 순서가 있는 목록 li &lt; 목록요소 </h3>
+        <ul>
+            <li>ul</li>
+            <li>li</li>
+        </ul>
+        <ol>
+            <li>ol</li>
+            <li>li</li>
+        </ol>
+    </div>
+    <div id = "table">
+        <h1>3.테이블태그</h1>
+        <h3>
+            table &lt; 표 삽입 tr &lt; 표에 행 삽입 th &lt; 표의 제목 셀 생성 td &lt; 표의 일반 셀 생성
+        </h3>
+        <br>
+        <table border ="1">
+            <tr>
+                <td>테이블</td> <td>테이블</td>
+            </tr>
+        </table>
+        <h3>
+            <xmp><table border="표의 테두리 두께 설정"> <th colspan="너비 지정"> <th rowspan="높이 지정"></xmp>
+        </h3>
+    </div>
+    <div id = "video">
+        <h1>4.미디어태그</h1>
+        <h3>
+            <xmp><img src="경로지정" alt="이미지없을경우글자" width="너비" height="높이"></xmp>
+            <img src="" alt="이미지없을경우">
+            <xmp><audio,video src="음악,비디어 경로" preload="준비 중일때 데이터 모두 불러올지 여부" autoplay="자동재생여부" loop="반복여부" controls="재생도구출력여부"></xmp>
+            <xmp><video width="너비" height="높이"></video></xmp>
+        </h3>
+    </div>
+</body>
+</html>

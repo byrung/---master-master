@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+}
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    padding: 1rem;
+    color: black;
+    background: teal;
+    text-align: center;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    text-align: center;
+}
+nav ul{
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+}
+nav a{
+    text-decoration-line: none;
+    
+}
+.color{
+    color: red;
+}
+img{
+    display: block;
+    margin: auto;
+}
+#wrapper{
+    height: 100%;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color : black;
+    position : absolute; /*하단바 고정*/
+    bottom : 0;
+}

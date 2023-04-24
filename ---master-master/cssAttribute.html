@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #shadow{
+            text-shadow: 5px 5px 5px black;
+        }
+        body{
+            background-image: url(여백의미.jpg);
+        }
+        #a{
+            width: 100px; height: 100px;
+            background-color: red;
+        }
+        #b{
+            width: 100px; height: 100px;
+            background-color: red;
+            border: 20px solid black;
+            margin: 10px; padding: 30px;
+        }
+        #class{
+            border-width: thick;
+            border-style: dashed;
+            border-color: black;
+        }
+        .font_big{ font-size: 2em;}
+        .font_italic{font-style: italic;}
+        .font_bold{font-weight: bold;}
+        .font_center{text-align: center;}
+        .button{
+            width: 250px;
+            height: 100px;
+            background-color: #FF6A00;
+            border: 10px solid #FFFFFF;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px #A9A9A9;
+        }
+        .button > a{
+            display: block;
+            line-height: 70px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<header>
+    <h1 class="header">CSS속성</h1>    <!--큰 제목 글자-->
+</header>
+<nav>
+    <ul> <!--순서가 없는 목록 생성-->
+        <li> <!--목록 요소 생성-->
+            <h2><a href="structure.html" class="color">기본구조</a></h2> <!--a태그는 하이퍼링크-->
+        </li>
+        <li>
+            <h2><a href="tag.html" class="color">기본태그</a></h2>
+        </li>
+        <li>
+            <h2><a href="structuredtag.html" class="color">구조화태그</a></h2>
+        </li>
+        <li>
+            <h2><a href="cssbasics.html" class="color">CSS기초</a></h2>
+        </li>
+        <li>
+            <h2><a href="index.html" class="color">홈</a></h2>
+        </li>
+    </ul>
+</nav>
+<body>
+<hr>
+    <h3>width height 속성 사용</h3>
+    <div id = "a"></div>
+    <h3>margin, padding 속성 사용</h3>
+    <div id = "b"></div>
+    <div id = "class">
+        <h1>기본 테두리 만들기</h1>
+    </div>
+    <div class = "button">
+        <a href="#" class="font_big font_italic font_bold font_center">간단</a>
+    </div>
+    <h1 id ="shadow">그림자넣기</h1>
+</body>
+</html>
